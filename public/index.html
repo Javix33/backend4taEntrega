@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Formulario productos</title>
+</head>
+
+<body>
+    <h1 class="tittle">
+        Formulario de ingreso para productos
+    </h1>
+    <p class="instructions">
+        Llena los campos requeridos para guardar un nuevo producto
+    </p>
+    <form class="FormContainer" action="/api/productos" method="post">
+        <label class="etiquetaForm" for="Tittle">
+            Nombre de producto
+        </label>
+        <input placeholder="Ingresa un nombre" class="inputForm" type="text">
+
+        <label class="etiquetaForm" for="price">Precio del producto</label>
+        <input placeholder="Ingresa el precio" class="inputForm" type="text">
+        <label class="etiquetaForm" for="thumbnail">Url de la imagen del producto</label>
+        <input placeholder="url de la imagen" class="inputForm" type="text">
+        <input class="button" type="submit" value="Añadir">
+    </form>
+
+</body>
+
+</html>
