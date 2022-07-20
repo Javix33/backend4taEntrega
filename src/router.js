@@ -10,7 +10,10 @@ router.get("/:id", (req, res) => {
     res.send(methods.getById(req.params.id))
 })
 
-router.post("/", (req, res) => { res.send(methods.add(req.body)) })
+router.post("/", (req, res) => {
+    res.send(methods.add(req.body));
+    console.log(req.body)
+})
 
 router.put("/:id", (req, res) => {
 
