@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Productos</title>
+</head>
+
+<body>
+    <%- include("./partials/header")%>
+        <ul class="productListContainer">
+            <% if (datos.length ===0){ %>
+                <h2 class="empty"> No hay productos agregados </h2>
+                <%}else{%>
+                    <% for (let i =0; i<datos.length; i++){%>
+                        <li class="productCard">
+                            <h2 class="productTittle">
+                                <%=datos[i].tittle%>
+                            </h2>
+                            <img class="productImage" src="<%=datos[i].thumbnail%>" alt="<%=datos[i].tittle%>">
+                            <p class="productPrice">
+                                Precio
+                                <%=datos[i].price%>.00
+                            </p>
+                        </li>
+                        <%}}%>
+
+        </ul>
+
+
+</body>
+
+</html>

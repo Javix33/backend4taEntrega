@@ -1,0 +1,22 @@
+<h2 class="productsTittle">
+    Binvenido a la tienda
+    </h2>
+<ul class="productListContainer">
+    
+    {{#each productos}}
+        <li class="productCard">
+            <h2 class="productTittle">
+                {{tittle}}
+            </h2>
+            <img class="productImage" src={{thumbnail}} alt={{tittle}}>
+            <p class="productPrice">
+                Precio ${{price}}.00
+            </p>
+        </li>
+    {{/each}}
+  
+</ul>
+
+<a class="botonInicio" href="/">
+Inicio
+</a>
