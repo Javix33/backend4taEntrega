@@ -1,0 +1,22 @@
+[
+  {
+    "autor": "javix33@hotmail.com",
+    "mensaje": "prueba1",
+    "fecha": "2/7/2022 Hora:16:59:51"
+  },
+  {
+    "autor": "javix33@hotmail.com",
+    "mensaje": "hola",
+    "fecha": "2/7/2022 Hora:16:59:57"
+  },
+  {
+    "autor": "javix33@hotmail.com",
+    "mensaje": "nuevo mensaje",
+    "fecha": "2/7/2022 Hora:17:0:0"
+  },
+  {
+    "autor": "javix33@hotmail.com",
+    "mensaje": "mensaje de control--------------------------------------",
+    "fecha": "2/7/2022 Hora:17:0:4"
+  }
+]
